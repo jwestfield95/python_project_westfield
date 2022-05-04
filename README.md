@@ -1,14 +1,15 @@
 # python_project_westfield
+
 This python script will generate  one output file for each string[ATTTGGATT,
 ACTGCAGCGCGATGATGAGAGAGATTTCAGGACACACATTGCCAAATTGAGGCAT,
 ATATATATATATATATA] containing a
-data frame, and a statement about complexity printed to the command line.
+data frame, and a statement about complexity for each string printed to the command line.
 
 To run this python script, type into the command line:
 python3 sub_str_possible.py
 
 to test this python script, type into the command line:
-py.test
+py.test sub_str_poss_test.py
 (this will take anything file with _test and test the python script)
 in this case the _test file is called sub_str_poss_test
 *for some reason this does not seem to work*
