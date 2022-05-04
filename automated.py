@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import pandas as pd
 def sub_str_possible(a_sting_of_letters,k):#function to get possible substrings
     '''input is a string of letters and k value
@@ -59,13 +60,14 @@ def Ling_complx(mylist):
         poskmers_lingc=(sub_str_possible(mylist,k))
         poslist_lingc.append(poskmers_lingc)
     return((sum(obslist_lingc))/(sum(poslist_lingc)))
-
-myfile='testing.txt'
-with open(myfile,"r") as f:
-    for eachline in f:
-        eachline = eachline.strip()
-        print(eachline)
-        print(create_df(eachline))
-        print(Ling_complx(eachline))
+    
+if __name__== '__main__':
+    myfile='testing.txt'
+    with open(myfile,"r") as f:
+        for eachline in f:
+            eachline = eachline.strip()
+            print(eachline)
+            print(create_df(eachline))
+            print(Ling_complx(eachline))
 
        
