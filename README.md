@@ -1,5 +1,6 @@
 # python_project_westfield
 
+
 This python script will generate  one output file for each string[ATTTGGATT,
 ACTGCAGCGCGATGATGAGAGAGATTTCAGGACACACATTGCCAAATTGAGGCAT,
 ATATATATATATATATA] containing a
@@ -7,6 +8,7 @@ data frame, and a statement about complexity for each string printed to the comm
 
 To run this python script, type into the command line:
 python3 sub_str_possible.py
+*please not all comments about what code is doing is found in this script*
 
 to test this python script, type into the command line:
 py.test sub_str_poss_test.py
@@ -26,5 +28,6 @@ with open(myfile,"r") as f:
 
 You can then run the automated.py script into the command line:
 python3 automated.py
+*please note that all the code is the same as in sub_str_possible.py,except this script takes a file containing the substrings. To see comments about what code is doing please see sub_str_possible.py*
 
 The output should print out a series of panda data frames having columns for k, observed kmers, and possible kmers, along with the string being run and the linguistic complexity to the command line
